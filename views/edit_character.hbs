@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование пользователя</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class = "allusers">
+        <h1>Редактирование пользователя</h1>
+        <form action="/edit_character" method="POST">
+            <input type="hidden" name="id" value="{{character.id}}" />
+            <label>Имя</label><br>
+            <input name="name" value="{{character.name}}"  class="field" /><br><br>
+            <label>Класс</label><br>
+            <input name="class" value="{{character.class}}"  class="field" /><br><br>
+            <input type="submit" value="Отправить" />
+        </form>
+        <a href="/characters">К списку персонажей</a>
+    </div>
+</body>
